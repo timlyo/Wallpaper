@@ -3,6 +3,4 @@
 class ProgramList{
 public:
 	bool nitrogen = false;
-
-
 };

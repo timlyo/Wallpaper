@@ -3,8 +3,8 @@ project(Wallpaper)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp
-    program_scanner.cpp
-    program_manager.cpp
-    program_list.cpp)
+set(SOURCE_FILES src/main.cpp
+    src/program_scanner.cpp
+    src/program_manager.cpp
+    src/program_list.cpp)
 add_executable(Wallpaper ${SOURCE_FILES})
