@@ -1,14 +1,15 @@
-#include "program_list.h"
-#include "program_scanner.h"
-#include "program_manager.h"
+#include "system/program_list.h"
+#include "system/program_scanner.h"
+#include "system/program_manager.h"
 #include "image/writer.h"
 
 int main() {
+	ProgramList programList;
 	ProgramScanner programScanner;
-	ProgramList programList = programScanner.scanSetters();
+	programList = programScanner.scanSetters(programList);
 
-	Writer::writePNG();
-
+	Size size(1920, 1080);
+	Writer::writePNG(size);
 
 	ProgramManager programManager(programList);
 	programManager.setWallpaper();

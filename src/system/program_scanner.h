@@ -7,8 +7,10 @@
 #include "program_list.h"
 
 class ProgramScanner {
-public:
-	ProgramList scanSetters();
-
+private:
 	bool scanNitrogen();
+	bool scanXrandr();
+public:
+	ProgramList scanSetters(ProgramList programList);
+	ProgramList scanScreen(ProgramList programList);
 };

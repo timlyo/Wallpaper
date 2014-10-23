@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.4)
 project(Wallpaper)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y")
 #set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/CMakeModules")
 
 
@@ -10,7 +10,8 @@ set(SOURCE_FILES src/main.cpp
     src/system/program_manager.cpp
     src/system/program_list.cpp
     src/image/image_generator.cpp
-    src/image/writer.cpp)
+    src/image/writer.cpp
+    src/util/types.cpp)
 
 find_package(ImageMagick COMPONENTS Magick++ REQUIRED)
 
