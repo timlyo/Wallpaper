@@ -1,6 +1,6 @@
 #pragma once
 
-class ProgramList{
+class ProgramList {
 public:
 	bool nitrogen = false;
 };

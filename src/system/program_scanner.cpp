@@ -1,15 +1,13 @@
 #include <fstream>
 #include "program_scanner.h"
-#include "program_list.h"
 
 
-
-ProgramList ProgramScanner::scanSetters(){
+ProgramList ProgramScanner::scanSetters() {
 	ProgramList programList;
-	
+
 	programList.nitrogen = scanNitrogen();
 
-	if(programList.nitrogen)
+	if (programList.nitrogen)
 		std::cout << "Found nitrogen" << std::endl;
 	else
 		std::cout << "No usable program found" << std::endl;
@@ -17,9 +15,9 @@ ProgramList ProgramScanner::scanSetters(){
 	return programList;
 }
 
-bool ProgramScanner::scanNitrogen(){
+bool ProgramScanner::scanNitrogen() {
 	std::ifstream file("/usr/bin/nitrogen");
-	if(file != NULL)
+	if (file != NULL)
 		return true;
 	return false;
 }

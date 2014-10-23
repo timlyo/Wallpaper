@@ -5,7 +5,7 @@
 
 #include "program_list.h"
 
-class ProgramManager{
+class ProgramManager {
 	ProgramList programList;
 public:
 	ProgramManager(ProgramList programList);

@@ -6,8 +6,9 @@
 
 #include "program_list.h"
 
-class ProgramScanner{
+class ProgramScanner {
 public:
 	ProgramList scanSetters();
+
 	bool scanNitrogen();
 };
