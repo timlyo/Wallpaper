@@ -7,6 +7,6 @@ ProgramManager::ProgramManager(ProgramList programList) :
 
 void ProgramManager::setWallpaper() {
 	if (programList.nitrogen) {
-		std::system("nitrogen ~/Background.png --set-auto");
+		std::system("nitrogen ~/Wallpaper.png --set-auto");
 	}
 }

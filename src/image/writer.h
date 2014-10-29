@@ -9,5 +9,5 @@
 
 class Writer{
 public:
-	void static writePNG(Size* size);
+	void static writePNG(Magick::Image* image);
 };

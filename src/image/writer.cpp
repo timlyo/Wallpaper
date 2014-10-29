@@ -1,10 +1,12 @@
 #include "writer.h"
 
-void Writer::writePNG(Size* size) {
-	char* argv;
-	std::string directory = User::getName() + "/image.png";
+void Writer::writePNG(Magick::Image* image) {
 
-	Magick::InitializeMagick(argv);
-	Magick::Image image(size->getGeometry(), "white");
-	image.write(directory);
+	std::string directory = User::getName() + "/Wallpaper.png";
+
+	try {
+		image->write(directory);
+	}catch (Magick::Exception &error){
+		std::cout << error.what() << std::endl;
+	}
 }
